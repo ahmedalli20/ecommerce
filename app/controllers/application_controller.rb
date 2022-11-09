@@ -8,7 +8,7 @@ class ApplicationController < Sinatra::Base
   end
 
 
-  get '/products/:id' do
+  get '/product/:id' do
     product = Product.find(params[:id])
     product.to_json
   end
@@ -25,7 +25,7 @@ class ApplicationController < Sinatra::Base
     product.to_json
   end
    
-  delete '/products/:id' do
+  delete '/product/:id' do
     # find the product using the ID
     product = Product.find(params[:id])
     # delete the product
@@ -34,8 +34,8 @@ class ApplicationController < Sinatra::Base
     product.to_json
   end
 
-  patch '/products/:id' do
-    product=Product.find(params[id])
+  patch '/product/:id' do
+    product=Product.find(params[:id])
     product.update(
       name: params[:name],
       price: params[:price],
