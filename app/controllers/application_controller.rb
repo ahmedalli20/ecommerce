@@ -20,7 +20,7 @@ class ApplicationController < Sinatra::Base
       description: params[:description],
       category_name: params[:category_name],
       quantity: params[:quantity],
-      image_url: params[:image_url]
+      image_url: params[:image_url],
     )
     product.to_json
   end
@@ -42,7 +42,7 @@ class ApplicationController < Sinatra::Base
       description: params[:description],
       category_name: params[:category_name],
       quantity: params[:quantity],
-      image_url: params[:image_url]
+      image_url: params[:image_url],
     )
     product.to_json
   end
