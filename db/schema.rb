@@ -12,11 +12,6 @@
 
 ActiveRecord::Schema.define(version: 2022_11_08_105757) do
 
-  create_table "categories", force: :cascade do |t|
-    t.string "name"
-    t.string "description"
-  end
-
   create_table "customers", force: :cascade do |t|
     t.string "user_name"
     t.string "email"
@@ -33,7 +28,7 @@ ActiveRecord::Schema.define(version: 2022_11_08_105757) do
     t.string "name"
     t.integer "price"
     t.string "description"
-    t.integer "category_id"
+    t.string "category_name"
     t.integer "quantity"
     t.string "image_url"
   end
