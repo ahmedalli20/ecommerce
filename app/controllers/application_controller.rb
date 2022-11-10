@@ -1,6 +1,29 @@
 class ApplicationController < Sinatra::Base
   set :default_content_type, 'application/json'
 
+  get '/customers' do
+    customers = Customer.all
+    
+    customers.to_json
+  end 
+
+  get '/customers/:id' do
+    customers =Customer.find(params[:id])
+    
+    customers.to_json
+  end 
+
+
+  post '/customers' do
+    customers= Customer.create(
+      user_name: params[:user_name],
+      email: params[:email],
+      password_digest: params[:password_digest],
+    )
+    customers.to_json
+  end
+
+
   get '/products' do
     products = Product.all
     
