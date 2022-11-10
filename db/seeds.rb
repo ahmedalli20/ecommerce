@@ -120,34 +120,31 @@ item1=Product.create(
 
 
 
-  # user1=Customer.creeate(
-  #   user_name:"Ahmed Ali"
-  #   email: "ahmedali@gmail.com"
-  #   password: "1254367"
-    
-  # )
+  user1=Customer.create(
+    user_name:"Ahmed Ali",
+    email:"ahmedali@gmail.com",
+    password:"1254367",
+  )
 
 
-  # user2=Customer.create(
-  #   user_name:  "Mahir Alli",
-  #   email:"mahiralli@gmail.com",
-  #   password: "1234567"
-    
-  # )
+  user2=Customer.create(
+    user_name:"Mahir Alli",
+    email:"mahiralli@gmail.com",
+    password:"1234567",
+  )
 
-  # user3=Customer.create(
-  #   user_name: "Erling Halaand",
-  #   email: "erlinghaland@gmail.com",
-  #   password: "1234765"
+  user3=Customer.create(
+    user_name:"Erling Halaand",
+    email:"erlinghaland@gmail.com",
+    password:"1234765"
     
-  # )
+  )
 
-  # user4=Customer.create(
-  #   user_name: "Miguna Miguna",
-  #   email: "migunamiguna@gmail.com",
-  #   password: "3214567"
-    
-  # )
+  user4=Customer.create(
+    user_name:"Miguna Miguna",
+    email:"migunamiguna@gmail.com",
+    password: "3214567",
+  )
 
 
 
